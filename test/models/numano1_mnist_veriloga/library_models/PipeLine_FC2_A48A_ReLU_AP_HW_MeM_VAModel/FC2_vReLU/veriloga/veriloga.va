@@ -1,0 +1,29 @@
+// VerilogA for LeNet3, vReLU, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+//The maximum achievable Voltage in conv. layer 1 is 2.076 V
+// Vout,max = 0.6 + ( 9*(15*7/2^7)*(0.8-0.6) )
+
+//if we scale this voltage by the number of MWC cells, i.e., 9, we get 
+// Vout,scaled = 0.6 + ( 9*(15*7/2^7)*(0.8-0.6)*1/9 ) = 0.765 V
+// Clip_MAX = this voltage 
+
+module FC2_vReLU(inout vin, inout vout);
+  parameter real CLIP_MIN = 0.6;      // Lower bound (representing 0)
+  parameter real CLIP_MAX = 100;     // Upper bound (representing 1)
+  electrical vin, vout;
+
+  analog begin
+    if (V(vin) < CLIP_MIN) begin
+      V(vout) <+ CLIP_MIN;
+    end else if (V(vin) > CLIP_MAX) begin
+      V(vout) <+ CLIP_MAX;
+    end else begin
+      V(vout) <+ V(vin);
+    end
+  end
+endmodule
+
+

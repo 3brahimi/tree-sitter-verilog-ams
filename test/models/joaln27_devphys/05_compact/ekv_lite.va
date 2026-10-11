@@ -1,0 +1,70 @@
+// ekv_lite: minimal EKV-style compact MOSFET model.
+//
+// Core (v1, stage 5 -- long channel): one smooth expression covers
+// subthreshold -> strong inversion and linear -> saturation:
+//     I = Is*(F(vp) - F(vp-vds)),  F(x) = ln(1+e^(x/2Vt))^2
+// Params: VTO (threshold), N (slope factor), KP (=mu*Cox), LAMBDA (CLM).
+//
+// v2 (stage 9 -- the L=0.15 um devices the INV is built from) adds the three
+// short-channel terms the stage-4d/8d TCAD curves demand, plus TYPE so one
+// model serves both polarities. EVERY ADDITION DEFAULTS TO IDENTITY, so a v1
+// instance (stage 5) evaluates bit-identically to before:
+//
+//   TYPE   +1 nmos / -1 pmos. All internal voltages are type-adjusted, so
+//          VTO is a positive magnitude for both polarities and a pmos is
+//          instantiated with its source on the supply, gate/drain as drawn.
+//   ETA    drain-induced barrier lowering: vth = VTO - ETA*|vds|. Without it
+//          a single VTO cannot serve both the vds=0.1 and vds=1.8 curves of a
+//          0.15 um device (measured DIBL is ~120 mV) and the fit compromises
+//          the ON region by ~25%.
+//   THETA  vertical-field mobility degradation, mu -> mu/(1+THETA*vp_eff).
+//          The TCAD carries this explicitly as mu_srf(Enormal); leaving it out
+//          is what pinned the ON-region error at ~25% no matter how the other
+//          knobs were fitted -- velocity saturation alone cannot mimic it.
+//   VC     velocity saturation, I -> I/(1 + vds_eff/VC), VC = Ec*L. vds_eff is
+//          a smooth harmonic min(|vds|, vp_eff): it tends to |vds| deep in
+//          triode and to vp_eff (i.e. saturates) beyond pinch-off, and it goes
+//          to zero in subthreshold where conduction is diffusive and not
+//          velocity limited.
+//
+// vp_eff = 2*Vt*ln(1+exp(vp/2Vt)) is a smooth max(vp,0): positive-definite, so
+// both divisors stay >= 1 and cannot change the sign of the current. |vds| is
+// used in the vsat/CLM terms so that a drain driven below the source during a
+// transient (overshoot, or the pmos before its output rises) stays well posed
+// -- the EKV core is already symmetric under source/drain exchange.
+`include "disciplines.vams"
+
+module ekv_lite(d, g, s);
+    inout d, g, s;
+    electrical d, g, s;
+
+    parameter real VTO    = 0.5   from (-2:2);
+    parameter real N      = 1.2   from (0.5:3);
+    parameter real KP     = 3e-4  from (1e-8:1);
+    parameter real LAMBDA = 0.0   from [0:2);
+    parameter real W      = 25e-4;          // cm
+    parameter real L      = 25e-4;          // cm
+    parameter real TYPE   = 1.0   from [-1:1];   // +1 nmos, -1 pmos
+    parameter real ETA    = 0.0   from [0:1);    // DIBL, V/V
+    parameter real THETA  = 0.0   from [0:20);   // 1/V, vertical-field
+    parameter real VC     = 1e9   from (0:inf);  // Ec*L, volts
+
+    real phit, vgst, vdst, vad, vp, vpe, vdse, isx, iff, irr;
+
+    analog begin
+        phit = $vt($temperature);
+        vgst = TYPE * V(g, s);
+        vdst = TYPE * V(d, s);
+        vad  = abs(vdst);
+        vp   = (vgst - (VTO - ETA * vad)) / N;
+        vpe  = 2.0 * phit * ln(1.0 + exp(vp / (2.0 * phit)));
+        vdse = vad * vpe / (vad + vpe + 1.0e-9);
+        isx  = 2.0 * N * KP * (W / L) * phit * phit;
+        iff  = ln(1.0 + exp(vp / (2.0 * phit)));
+        iff  = iff * iff;
+        irr  = ln(1.0 + exp((vp - vdst) / (2.0 * phit)));
+        irr  = irr * irr;
+        I(d, s) <+ TYPE * isx * (iff - irr) * (1.0 + LAMBDA * vad)
+                   / ((1.0 + THETA * vpe) * (1.0 + vdse / VC));
+    end
+endmodule

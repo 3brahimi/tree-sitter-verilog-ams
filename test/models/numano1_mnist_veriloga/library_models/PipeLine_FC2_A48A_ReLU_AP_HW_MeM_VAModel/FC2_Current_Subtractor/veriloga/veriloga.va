@@ -1,0 +1,25 @@
+// VerilogA for LeNet3, current_subtractor, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module C2_FC2_Current_Subtractor(inout Iin1, inout Iin2, inout Iout, input Vreg);
+  electrical Iin1, Iin2, Iout, Vreg;
+  //real absIin1, absIin2;
+
+  analog begin
+    // Regulate input terminal voltages to a reference
+    V(Iin1) <+ V(Vreg);
+    V(Iin2) <+ V(Vreg);
+    //V(Iout) <+ V(Vreg);
+
+    // Calculate the absolute value of each input current
+    //absIin1 = (I(Iin1) >= 0 ? I(Iin1) : -I(Iin1));
+    //absIin2 = (I(Iin2) >= 0 ? I(Iin2) : -I(Iin2));
+
+    // Output is the difference of the absolute values
+    I(Iout) <+ -(I(Iin1) - I(Iin2));
+  end
+endmodule
+
+

@@ -1,0 +1,19 @@
+// VerilogA for LeNet3, Buffer, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+
+module FC2_Buffer_Digi(Vin, Vout);
+  inout Vin;
+  inout Vout;
+  electrical Vin, Vout;
+
+  parameter real Vhigh = 1.2; // High state voltage
+  parameter real Vlow = 0; // Low state voltage
+  parameter real Vth = 0.6; // Threshold voltage
+
+  analog begin
+   V(Vout) <+ V(Vin);
+  end
+endmodule
