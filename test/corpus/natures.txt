@@ -1,0 +1,88 @@
+============================================================
+Nature declaration
+============================================================
+
+nature Current
+  units = "A";
+  access = I;
+  idt_nature = Charge;
+  abstol = 1p;
+endnature
+
+----
+
+(source_file
+  (nature_declaration
+    (simple_identifier)
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (primary_literal
+            (string_literal
+              (quoted_string
+                (quoted_string_item)))))))
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (simple_identifier))))
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (simple_identifier))))
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (primary_literal
+            (real_number
+              (scaled_real_number))))))))
+
+============================================================
+Nature with parent nature
+============================================================
+
+nature Small_current : Current;
+  abstol = 1e-15;
+endnature
+
+----
+
+(source_file
+  (nature_declaration
+    (simple_identifier)
+    (parent_nature
+      (simple_identifier))
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (primary_literal
+            (real_number)))))))
+
+============================================================
+Nature derived from a discipline
+============================================================
+
+nature Ttemp : thermal.potential
+  units = "K";
+endnature
+
+----
+
+(source_file
+  (nature_declaration
+    (simple_identifier)
+    (parent_nature
+      (simple_identifier)
+      (potential_or_flow))
+    (nature_attribute
+      (simple_identifier)
+      (constant_expression
+        (constant_primary
+          (primary_literal
+            (string_literal
+              (quoted_string
+                (quoted_string_item)))))))))

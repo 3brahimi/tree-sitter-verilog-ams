@@ -1,0 +1,79 @@
+============================================================
+Discipline declaration
+============================================================
+
+discipline electrical
+  potential Voltage;
+  flow Current;
+enddiscipline
+
+----
+
+(source_file
+  (discipline_declaration
+    (simple_identifier)
+    (nature_binding
+      (potential_or_flow)
+      (simple_identifier))
+    (nature_binding
+      (potential_or_flow)
+      (simple_identifier))))
+
+============================================================
+Discipline with domain and attribute override
+============================================================
+
+discipline sig_flow;
+  potential Voltage;
+  domain continuous;
+  potential.abstol = 1u;
+enddiscipline
+
+----
+
+(source_file
+  (discipline_declaration
+    (simple_identifier)
+    (nature_binding
+      (potential_or_flow)
+      (simple_identifier))
+    (discipline_domain_binding
+      (discrete_or_continuous))
+    (nature_attribute_override
+      (potential_or_flow)
+      (nature_attribute
+        (simple_identifier)
+        (constant_expression
+          (constant_primary
+            (primary_literal
+              (real_number
+                (scaled_real_number)))))))))
+
+============================================================
+Discrete discipline
+============================================================
+
+discipline logic
+  domain discrete;
+enddiscipline
+
+----
+
+(source_file
+  (discipline_declaration
+    (simple_identifier)
+    (discipline_domain_binding
+      (discrete_or_continuous))))
+
+============================================================
+Empty discipline
+============================================================
+
+discipline empty
+enddiscipline
+
+----
+
+(source_file
+  (discipline_declaration
+    (simple_identifier)))

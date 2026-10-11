@@ -1,0 +1,425 @@
+============================================================
+Contribution statements
+============================================================
+
+module m(a, b);
+  electrical a, b;
+  branch (a, b) br;
+  analog begin
+    V(a, b) <+ 1.0;
+    I(br) <+ ddt(V(br));
+    I(<a>) <+ 0.0;
+    Pwr(a) <+ V(a) * I(a);
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (branch_declaration
+        (branch_terminal
+          (hierarchical_identifier
+            (simple_identifier)))
+        (branch_terminal
+          (hierarchical_identifier
+            (simple_identifier)))
+        (simple_identifier)))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (expression
+                          (primary
+                            (primary_literal
+                              (real_number
+                                (fixed_point_number)))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (expression
+                          (primary
+                            (analog_operator_call
+                              (analog_operator)
+                              (list_of_arguments
+                                (expression
+                                  (primary
+                                    (branch_probe
+                                      (hierarchical_identifier
+                                        (simple_identifier))
+                                      (branch_terminal
+                                        (hierarchical_identifier
+                                          (simple_identifier))))))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (hierarchical_identifier
+                            (simple_identifier)))
+                        (expression
+                          (primary
+                            (primary_literal
+                              (real_number
+                                (fixed_point_number)))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (expression
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier))))))
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier)))))))))))))))))))
+
+============================================================
+Indirect contribution
+============================================================
+
+module opamp(out, in);
+  electrical out, in;
+  analog V(out) : V(in) == 0;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (indirect_contribution_statement
+                (branch_probe
+                  (hierarchical_identifier
+                    (simple_identifier))
+                  (branch_terminal
+                    (hierarchical_identifier
+                      (simple_identifier))))
+                (expression
+                  (expression
+                    (primary
+                      (branch_probe
+                        (hierarchical_identifier
+                          (simple_identifier))
+                        (branch_terminal
+                          (hierarchical_identifier
+                            (simple_identifier))))))
+                  (expression
+                    (primary
+                      (primary_literal
+                        (integral_number
+                          (decimal_number
+                            (unsigned_number)))))))))))))))
+
+============================================================
+Contribution in conditional
+============================================================
+
+module m(a);
+  electrical a;
+  analog begin
+    if (V(a) > 0.5)
+      V(a) <+ 1.0;
+    else
+      V(a) <+ 0.0;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))))
+    (module_item
+      (net_declaration
+        (simple_identifier)
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (conditional_statement
+                        (cond_predicate
+                          (expression
+                            (expression
+                              (primary
+                                (branch_probe
+                                  (hierarchical_identifier
+                                    (simple_identifier))
+                                  (branch_terminal
+                                    (hierarchical_identifier
+                                      (simple_identifier))))))
+                            (expression
+                              (primary
+                                (primary_literal
+                                  (real_number
+                                    (fixed_point_number)))))))
+                        (statement_or_null
+                          (statement
+                            (statement_item
+                              (contribution_statement
+                                (branch_probe
+                                  (hierarchical_identifier
+                                    (simple_identifier))
+                                  (branch_terminal
+                                    (hierarchical_identifier
+                                      (simple_identifier))))
+                                (expression
+                                  (primary
+                                    (primary_literal
+                                      (real_number
+                                        (fixed_point_number)))))))))
+                        (statement_or_null
+                          (statement
+                            (statement_item
+                              (contribution_statement
+                                (branch_probe
+                                  (hierarchical_identifier
+                                    (simple_identifier))
+                                  (branch_terminal
+                                    (hierarchical_identifier
+                                      (simple_identifier))))
+                                (expression
+                                  (primary
+                                    (primary_literal
+                                      (real_number
+                                        (fixed_point_number)))))))))))))))))))))
+
+============================================================
+Contribution targets with comments and strings nearby
+============================================================
+
+module m(a, o, i);
+  electrical a, o, i;
+  analog begin
+    I(a) /* note */ <+ 2;
+    I(a) // note
+      <+ 3;
+    Temp(t[0]) <+ $limit(V(a), "pnjlim(");
+    V(o): V(i) == 0;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (block_comment)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (integral_number
+                                (decimal_number
+                                  (unsigned_number))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (one_line_comment)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (integral_number
+                                (decimal_number
+                                  (unsigned_number))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))
+                            (constant_select
+                              (constant_bit_select
+                                (constant_expression
+                                  (constant_primary
+                                    (primary_literal
+                                      (integral_number
+                                        (decimal_number
+                                          (unsigned_number))))))))))
+                        (expression
+                          (primary
+                            (function_subroutine_call
+                              (subroutine_call
+                                (analog_system_tf_call
+                                  (analog_system_function)
+                                  (list_of_arguments
+                                    (expression
+                                      (primary
+                                        (branch_probe
+                                          (hierarchical_identifier
+                                            (simple_identifier))
+                                          (branch_terminal
+                                            (hierarchical_identifier
+                                              (simple_identifier))))))
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (string_literal
+                                            (quoted_string
+                                              (quoted_string_item))))))))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (indirect_contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (expression
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier))))))
+                          (expression
+                            (primary
+                              (primary_literal
+                                (integral_number
+                                  (decimal_number
+                                    (unsigned_number)))))))))))))))))))

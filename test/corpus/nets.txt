@@ -1,0 +1,94 @@
+============================================================
+Wreal nets
+============================================================
+
+module m(a, b);
+  input a;
+  output b;
+  wreal a, b;
+  wreal [3:0] bus;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (port_declaration
+        (input_declaration
+          (list_of_port_identifiers
+            (simple_identifier)))))
+    (module_item
+      (port_declaration
+        (output_declaration
+          (list_of_port_identifiers
+            (simple_identifier)))))
+    (module_item
+      (net_declaration
+        (net_type)
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier))
+          (net_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (net_declaration
+        (net_type)
+        (data_type_or_implicit
+          (implicit_data_type
+            (packed_dimension
+              (constant_range
+                (constant_expression
+                  (constant_primary
+                    (primary_literal
+                      (integral_number
+                        (decimal_number
+                          (unsigned_number))))))
+                (constant_expression
+                  (constant_primary
+                    (primary_literal
+                      (integral_number
+                        (decimal_number
+                          (unsigned_number))))))))))
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier)))))))
+
+============================================================
+Ground declaration
+============================================================
+
+module m;
+  electrical gnd;
+  ground gnd;
+  ground electrical g2, g3;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (data_declaration
+      (data_type_or_implicit
+        (data_type
+          (simple_identifier)))
+      (list_of_variable_decl_assignments
+        (variable_decl_assignment
+          (simple_identifier))))
+    (ground_declaration
+      (simple_identifier))
+    (ground_declaration
+      (simple_identifier)
+      (simple_identifier)
+      (simple_identifier))))

@@ -1,0 +1,351 @@
+============================================================
+Analog block
+============================================================
+
+module r(p, n);
+  inout p, n;
+  electrical p, n;
+  parameter real R = 1k;
+  analog begin
+    I(p, n) <+ V(p, n) / R;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (port_declaration
+        (inout_declaration
+          (list_of_port_identifiers
+            (simple_identifier)
+            (simple_identifier)))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (parameter_declaration
+        (data_type_or_implicit
+          (data_type
+            (non_integer_type)))
+        (list_of_param_assignments
+          (param_assignment
+            (simple_identifier)
+            (constant_param_expression
+              (constant_mintypmax_expression
+                (constant_expression
+                  (constant_primary
+                    (primary_literal
+                      (real_number
+                        (scaled_real_number)))))))))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier))))
+                        (expression
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier)))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier))))))
+                          (expression
+                            (primary
+                              (hierarchical_identifier
+                                (simple_identifier)))))))))))))))))
+
+============================================================
+Analog initial block
+============================================================
+
+module m;
+  real x;
+  analog initial begin
+    x = 0.0;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (data_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_variable_decl_assignments
+        (variable_decl_assignment
+          (simple_identifier))))
+    (analog_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (seq_block
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (blocking_assignment
+                      (operator_assignment
+                        (variable_lvalue
+                          (hierarchical_identifier
+                            (simple_identifier)))
+                        (assignment_operator)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (real_number
+                                (fixed_point_number)))))))))))))))))
+
+============================================================
+Analog statement without begin-end
+============================================================
+
+module m(a);
+  electrical a;
+  analog V(a) <+ 0.0;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))))
+    (module_item
+      (net_declaration
+        (simple_identifier)
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (contribution_statement
+                (branch_probe
+                  (hierarchical_identifier
+                    (simple_identifier))
+                  (branch_terminal
+                    (hierarchical_identifier
+                      (simple_identifier))))
+                (expression
+                  (primary
+                    (primary_literal
+                      (real_number
+                        (fixed_point_number)))))))))))))
+
+============================================================
+Analog block in a generate loop
+============================================================
+
+module m(a);
+  electrical [0:3] a;
+  genvar k;
+  for (k = 0; k < 4; k = k + 1) begin : g
+    analog V(a[k]) <+ 1.0;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)
+            (packed_dimension
+              (constant_range
+                (constant_expression
+                  (constant_primary
+                    (primary_literal
+                      (integral_number
+                        (decimal_number
+                          (unsigned_number))))))
+                (constant_expression
+                  (constant_primary
+                    (primary_literal
+                      (integral_number
+                        (decimal_number
+                          (unsigned_number))))))))))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (genvar_declaration
+        (list_of_genvar_identifiers
+          (simple_identifier))))
+    (module_item
+      (loop_generate_construct
+        (genvar_initialization
+          (simple_identifier)
+          (constant_expression
+            (constant_primary
+              (primary_literal
+                (integral_number
+                  (decimal_number
+                    (unsigned_number)))))))
+        (constant_expression
+          (constant_expression
+            (constant_primary
+              (simple_identifier)))
+          (constant_expression
+            (constant_primary
+              (primary_literal
+                (integral_number
+                  (decimal_number
+                    (unsigned_number)))))))
+        (genvar_iteration
+          (simple_identifier)
+          (assignment_operator)
+          (constant_expression
+            (constant_expression
+              (constant_primary
+                (simple_identifier)))
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))))
+        (generate_block
+          (simple_identifier)
+          (analog_construct
+            (statement_or_null
+              (statement
+                (statement_item
+                  (contribution_statement
+                    (branch_probe
+                      (hierarchical_identifier
+                        (simple_identifier))
+                      (branch_terminal
+                        (hierarchical_identifier
+                          (simple_identifier))
+                        (constant_select
+                          (constant_bit_select
+                            (constant_expression
+                              (constant_primary
+                                (simple_identifier)))))))
+                    (expression
+                      (primary
+                        (primary_literal
+                          (real_number
+                            (fixed_point_number)))))))))))))))
+
+============================================================
+Analog function
+============================================================
+
+module m;
+  analog function real square;
+    input x;
+    real x;
+    begin
+      square = x * x;
+    end
+  endfunction
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (analog_function_declaration
+      (function_declaration
+        (function_body_declaration
+          (data_type_or_void
+            (data_type
+              (non_integer_type)))
+          (simple_identifier)
+          (tf_item_declaration
+            (tf_port_declaration
+              (tf_port_direction
+                (port_direction))
+              (list_of_tf_variable_identifiers
+                (simple_identifier))))
+          (tf_item_declaration
+            (block_item_declaration
+              (data_declaration
+                (data_type_or_implicit
+                  (data_type
+                    (non_integer_type)))
+                (list_of_variable_decl_assignments
+                  (variable_decl_assignment
+                    (simple_identifier))))))
+          (function_statement_or_null
+            (function_statement
+              (statement
+                (statement_item
+                  (seq_block
+                    (statement_or_null
+                      (statement
+                        (statement_item
+                          (blocking_assignment
+                            (operator_assignment
+                              (variable_lvalue
+                                (hierarchical_identifier
+                                  (simple_identifier)))
+                              (assignment_operator)
+                              (expression
+                                (expression
+                                  (primary
+                                    (hierarchical_identifier
+                                      (simple_identifier))))
+                                (expression
+                                  (primary
+                                    (hierarchical_identifier
+                                      (simple_identifier))))))))))))))))))))

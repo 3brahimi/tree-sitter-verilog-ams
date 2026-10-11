@@ -1,0 +1,356 @@
+============================================================
+Cross event
+============================================================
+
+module m(a);
+  electrical a;
+  integer n;
+  analog begin
+    @(cross(V(a) - 0.5, +1, 1p, 1u))
+      n = n + 1;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))))
+    (module_item
+      (net_declaration
+        (simple_identifier)
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (integer_atom_type)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (procedural_timing_control_statement
+                        (event_control
+                          (clocking_event
+                            (event_expression
+                              (analog_event_function
+                                (analog_event_name)
+                                (list_of_arguments
+                                  (expression
+                                    (expression
+                                      (primary
+                                        (branch_probe
+                                          (hierarchical_identifier
+                                            (simple_identifier))
+                                          (branch_terminal
+                                            (hierarchical_identifier
+                                              (simple_identifier))))))
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (real_number
+                                            (fixed_point_number))))))
+                                  (expression
+                                    (unary_operator)
+                                    (primary
+                                      (primary_literal
+                                        (integral_number
+                                          (decimal_number
+                                            (unsigned_number))))))
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (real_number
+                                          (scaled_real_number)))))
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (real_number
+                                          (scaled_real_number))))))))))
+                        (statement_or_null
+                          (statement
+                            (statement_item
+                              (blocking_assignment
+                                (operator_assignment
+                                  (variable_lvalue
+                                    (hierarchical_identifier
+                                      (simple_identifier)))
+                                  (assignment_operator)
+                                  (expression
+                                    (expression
+                                      (primary
+                                        (hierarchical_identifier
+                                          (simple_identifier))))
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (integral_number
+                                            (decimal_number
+                                              (unsigned_number))))))))))))))))))))))))
+
+============================================================
+Above and timer events
+============================================================
+
+module m(a);
+  electrical a;
+  integer n;
+  analog begin
+    @(above(V(a) - 1.0)) n = 1;
+    @(timer(0, 10n)) n = n + 1;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))))
+    (module_item
+      (net_declaration
+        (simple_identifier)
+        (list_of_net_decl_assignments
+          (net_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (integer_atom_type)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (procedural_timing_control_statement
+                        (event_control
+                          (clocking_event
+                            (event_expression
+                              (analog_event_function
+                                (analog_event_name)
+                                (list_of_arguments
+                                  (expression
+                                    (expression
+                                      (primary
+                                        (branch_probe
+                                          (hierarchical_identifier
+                                            (simple_identifier))
+                                          (branch_terminal
+                                            (hierarchical_identifier
+                                              (simple_identifier))))))
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (real_number
+                                            (fixed_point_number)))))))))))
+                        (statement_or_null
+                          (statement
+                            (statement_item
+                              (blocking_assignment
+                                (operator_assignment
+                                  (variable_lvalue
+                                    (hierarchical_identifier
+                                      (simple_identifier)))
+                                  (assignment_operator)
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (integral_number
+                                          (decimal_number
+                                            (unsigned_number)))))))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (procedural_timing_control_statement
+                        (event_control
+                          (clocking_event
+                            (event_expression
+                              (analog_event_function
+                                (analog_event_name)
+                                (list_of_arguments
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (integral_number
+                                          (decimal_number
+                                            (unsigned_number))))))
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (real_number
+                                          (scaled_real_number))))))))))
+                        (statement_or_null
+                          (statement
+                            (statement_item
+                              (blocking_assignment
+                                (operator_assignment
+                                  (variable_lvalue
+                                    (hierarchical_identifier
+                                      (simple_identifier)))
+                                  (assignment_operator)
+                                  (expression
+                                    (expression
+                                      (primary
+                                        (hierarchical_identifier
+                                          (simple_identifier))))
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (integral_number
+                                            (decimal_number
+                                              (unsigned_number))))))))))))))))))))))))
+
+============================================================
+Initial and final step
+============================================================
+
+module m;
+  integer n;
+  analog begin
+    @(initial_step) n = 0;
+    @(initial_step("tran", "ac") or final_step) n = 1;
+    @(final_step("tran")) $strobe("done");
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (data_declaration
+      (data_type_or_implicit
+        (data_type
+          (integer_atom_type)))
+      (list_of_variable_decl_assignments
+        (variable_decl_assignment
+          (simple_identifier))))
+    (analog_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (seq_block
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (procedural_timing_control_statement
+                      (event_control
+                        (clocking_event
+                          (event_expression
+                            (analog_event_function
+                              (analog_event_name)))))
+                      (statement_or_null
+                        (statement
+                          (statement_item
+                            (blocking_assignment
+                              (operator_assignment
+                                (variable_lvalue
+                                  (hierarchical_identifier
+                                    (simple_identifier)))
+                                (assignment_operator)
+                                (expression
+                                  (primary
+                                    (primary_literal
+                                      (integral_number
+                                        (decimal_number
+                                          (unsigned_number)))))))))))))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (procedural_timing_control_statement
+                      (event_control
+                        (clocking_event
+                          (event_expression
+                            (event_expression
+                              (analog_event_function
+                                (analog_event_name)
+                                (list_of_arguments
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (string_literal
+                                          (quoted_string
+                                            (quoted_string_item))))))
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (string_literal
+                                          (quoted_string
+                                            (quoted_string_item)))))))))
+                            (event_expression
+                              (analog_event_function
+                                (analog_event_name))))))
+                      (statement_or_null
+                        (statement
+                          (statement_item
+                            (blocking_assignment
+                              (operator_assignment
+                                (variable_lvalue
+                                  (hierarchical_identifier
+                                    (simple_identifier)))
+                                (assignment_operator)
+                                (expression
+                                  (primary
+                                    (primary_literal
+                                      (integral_number
+                                        (decimal_number
+                                          (unsigned_number)))))))))))))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (procedural_timing_control_statement
+                      (event_control
+                        (clocking_event
+                          (event_expression
+                            (analog_event_function
+                              (analog_event_name)
+                              (list_of_arguments
+                                (expression
+                                  (primary
+                                    (primary_literal
+                                      (string_literal
+                                        (quoted_string
+                                          (quoted_string_item)))))))))))
+                      (statement_or_null
+                        (statement
+                          (statement_item
+                            (subroutine_call_statement
+                              (subroutine_call
+                                (system_tf_call
+                                  (system_tf_identifier)
+                                  (list_of_arguments
+                                    (expression
+                                      (primary
+                                        (primary_literal
+                                          (string_literal
+                                            (quoted_string
+                                              (quoted_string_item))))))))))))))))))))))))
