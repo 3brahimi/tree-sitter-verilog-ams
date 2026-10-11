@@ -1,0 +1,26 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [ "setuptools>=62.4.0", "wheel" ]
+
+[project]
+authors = [ { name = "Masoud Ebrahimi" } ]
+classifiers = [
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Compilers",
+  "Topic :: Text Processing :: Linguistic",
+  "Typing :: Typed",
+]
+description = "Verilog-AMS and Verilog-A grammar for tree-sitter, extending tree-sitter-systemverilog"
+keywords = [ "incremental", "parsing", "tree-sitter", "verilog-ams", "verilog-a" ]
+license.text = "MIT"
+name = "tree-sitter-verilog-ams"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[project.optional-dependencies]
+core = [ "tree-sitter>=0.25" ]
+
+[tool.cibuildwheel]
+build = "cp310-*"
+build-frontend = "build"
