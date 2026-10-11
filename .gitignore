@@ -1,0 +1,23 @@
+# Python artifacts
+.venv/
+build/
+dist/
+*.egg-info
+*.whl
+__pycache__/
+
+# C artifacts
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.o
+*.obj
+
+# Grammar volatiles
+*.wasm
+log.html
+
+# Test models fetched by scripts/fetch_models.py (not redistributed here)
+test/models/.fetched/
