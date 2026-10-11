@@ -1,0 +1,2090 @@
+[
+ {
+  "path": "VA-Models/code/ASMHEMT/vacode/asmhemt.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/ASMHEMT/vacode/asmhemt.va",
+  "license": "ECL-2.0",
+  "license_evidence": "code/ASMHEMT/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/ASMHEMT/vacode/asmhemt101_0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/ASMHEMT/vacode/asmhemt101_0.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/EPFL-HEMT/vacode/epfl_hemt.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/EPFL-HEMT/vacode/epfl_hemt.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/L-UTSOI/vacode/L_UTSOI_102.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/L-UTSOI/vacode/L_UTSOI_102.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/L-UTSOI/vacode/L_UTSOI_102_macrodef.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/L-UTSOI/vacode/L_UTSOI_102_macrodef.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/L-UTSOI/vacode/L_UTSOI_102_module.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/L-UTSOI/vacode/L_UTSOI_102_module.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/L-UTSOI/vacode/L_UTSOI_102_nqs.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/L-UTSOI/vacode/L_UTSOI_102_nqs.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/MOSVAR/vacode/macrosAndDefines_cmc.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/MOSVAR/vacode/macrosAndDefines_cmc.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/MOSVAR/vacode/mosvar.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/MOSVAR/vacode/mosvar.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/MOSVAR/vacode/mosvarpspMacros.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/MOSVAR/vacode/mosvarpspMacros.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/angelov/vacode/angelov.va",
+  "committed": true,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/angelov/vacode/angelov.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/angelov/vacode/angelov_gan.va",
+  "committed": true,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/angelov/vacode/angelov_gan.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsim6/vacode/BSIM6.1.1.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsim6/vacode/BSIM6.1.1.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsim6/vacode/bsim6.0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsim6/vacode/bsim6.0.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimbulk/vacode/bsimbulk.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimbulk/vacode/bsimbulk.va",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimbulk/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimbulk/vacode/bsimbulk106.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimbulk/vacode/bsimbulk106.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimbulk/vacode/bsimbulk107.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimbulk/vacode/bsimbulk107.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg.va",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_body.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_body.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_checking.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_checking.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_initialization.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_initialization.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_macros.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_macros.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_noise.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_noise.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_parameters.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_parameters.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimcmg/vacode/bsimcmg_variables.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimcmg/vacode/bsimcmg_variables.include",
+  "license": "ECL-2.0",
+  "license_evidence": "code/bsimcmg/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/bsimimg/vacode/bsimimg.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimimg/vacode/bsimimg.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimimg/vacode/bsimimg_binning.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimimg/vacode/bsimimg_binning.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimimg/vacode/bsimimg_body.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimimg/vacode/bsimimg_body.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimimg/vacode/bsimimg_sp.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimimg/vacode/bsimimg_sp.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimimg/vacode/common_defs.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimimg/vacode/common_defs.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/bsimsoi/vacode/bsimsoi.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/bsimsoi/vacode/bsimsoi.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_InitModel.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_InitModel.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_SIMKIT_macrodefs.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_SIMKIT_macrodefs.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_macrodefs.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_macrodefs.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_parlist.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_parlist.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_varlist1.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_varlist1.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/DIODE_CMC_varlist2.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/DIODE_CMC_varlist2.include",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/diode_cmc/vacode/diode_cmc.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/diode_cmc/vacode/diode_cmc.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/ekv/vacode/generalMacrosAndDefines.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/ekv/vacode/generalMacrosAndDefines.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hicum0/vacode/HICUML0-2.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hicum0/vacode/HICUML0-2.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hicum0/vacode/hicumL0_v2p0p0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hicum0/vacode/hicumL0_v2p0p0.va",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hicum0/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hicum0/vacode/hicumL0_v2p1p0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hicum0/vacode/hicumL0_v2p1p0.va",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hicum0/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_analyticalPs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_analyticalPs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_depmos.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_depmos.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_depmos2.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_depmos2.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_depmos3.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_depmos3.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_eval_aging.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_eval_aging.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_eval_newPT.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_eval_newPT.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/HSM2_iterativePs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/HSM2_iterativePs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisim2/vacode/hisim2.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisim2/vacode/hisim2.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_analyticalPs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_analyticalPs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hisimhv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_depmos.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_depmos.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_depmos2.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_depmos2.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_depmos3.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_depmos3.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_Overlap.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_Overlap.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hisimhv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_aging.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_aging.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_dio.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_dio.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_loverLim.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_loverLim.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hisimhv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_newPT.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_newPT.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hisimhv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_qover.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_qover.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_rdrift.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_rdrift.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_eval_rdrifts.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_eval_rdrifts.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_iterativePs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_iterativePs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "code/hisimhv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_macrosAndDefs.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_macrosAndDefs.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_module.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_module.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_temp_eval.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_temp_eval.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_temp_eval_dio.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_temp_eval_dio.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_temp_eval_rdri.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_temp_eval_rdri.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/HSMHV_temp_eval_rdris.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/HSMHV_temp_eval_rdris.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/hisimhv.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/hisimhv.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/hisimhv_n4.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/hisimhv_n4.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimhv/vacode/hisimhv_n5.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimhv/vacode/hisimhv_n5.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_BT_module.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_BT_module.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_FB_module.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_FB_module.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_TOP_module.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_TOP_module.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_analyticalPs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_analyticalPs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_eval_newPT.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_eval_newPT.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_eval_rdrift.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_eval_rdrift.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_iterativePs0.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_iterativePs0.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/HSMSOI_macrosAndDefs.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/HSMSOI_macrosAndDefs.inc",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/hisimsoi.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/hisimsoi.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/hisimsoi_n4.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/hisimsoi_n4.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsoi/vacode/hisimsoi_n5.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsoi/vacode/hisimsoi_n5.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/hisimsotb/vacode/hisimsotb.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/hisimsotb/vacode/hisimsotb.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/bjt505.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/bjt505.va",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/bjt505t.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/bjt505t.va",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/bjtd505.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/bjtd505.va",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/bjtd505t.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/bjtd505t.va",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/evaluate.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/evaluate.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/frontdef.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/frontdef.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/initialize.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/initialize.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/noise.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/noise.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/op_print.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/op_print.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/opinfo.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/opinfo.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/opvars.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/opvars.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/parameters.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/parameters.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/tscaling.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/tscaling.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mextram/vacode/variables.inc",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mextram/vacode/variables.inc",
+  "license": "Mextram IP license (CMC-style: royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header refs IP_NOTICE_DISCLAIMER_LICENSE; text in code/mextram/vacode/IP_disclaimer_license.txt"
+ },
+ {
+  "path": "VA-Models/code/mvsg/vacode/generalMacrosAndDefines.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mvsg/vacode/generalMacrosAndDefines.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/mvsg/vacode/mvsg_cmc_1.1.1.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mvsg/vacode/mvsg_cmc_1.1.1.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/mvsg/vacode/mvsg_cmc_2.1.0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mvsg/vacode/mvsg_cmc_2.1.0.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/mvsg/vacode/mvsg_cmc_3.2.0.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/mvsg/vacode/mvsg_cmc_3.2.0.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/PSP103_SPCalculation.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/PSP103_SPCalculation.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/PSP103_macrodefs.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/PSP103_macrodefs.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/general_v1_0_4.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/general_v1_0_4.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/jfetidgIds_v1_0_1.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/jfetidgIds_v1_0_1.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/junction_v1_0_2.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/junction_v1_0_2.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/psphv.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/psphv.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/psphvrr.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/psphvrr.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/simulatorFlags.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/simulatorFlags.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "code/psphv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/psphv/vacode/sp_functions.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/psphv/vacode/sp_functions.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "code/psphv/vacode/LICENSE.txt (same directory; file has no license header)"
+ },
+ {
+  "path": "VA-Models/code/r2_cmc/vacode/r2_cmc.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r2_cmc/vacode/r2_cmc.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/r2_cmc/vacode/r2_cmc_body.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r2_cmc/vacode/r2_cmc_body.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/r2_cmc/vacode/r2_cmc_macros.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r2_cmc/vacode/r2_cmc_macros.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/r2_cmc/vacode/r2_et_cmc.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r2_cmc/vacode/r2_et_cmc.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/r3_cmc/vacode/r3_cmc.va",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r3_cmc/vacode/r3_cmc.va",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "VA-Models/code/r3_cmc/vacode/r3_cmc_macros.include",
+  "committed": false,
+  "source_repo": "dwarning/VA-Models",
+  "commit": "6099b4e12e6f66ff530f59b8d01fb909094be85a",
+  "upstream_path": "code/r3_cmc/vacode/r3_cmc_macros.include",
+  "license": "ECL-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/capacitor_module.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/capacitor_module.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/capacitor_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/capacitor_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/cornerCAP.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/cornerCAP.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/cornerMOShv.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/cornerMOShv.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/cornerMOSlv.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/cornerMOSlv.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/cornerRES.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/cornerRES.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/idc.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/idc.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (Apache-2.0) (file has no license header)"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/resistor_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/resistor_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_module.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_module.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_rf_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moshv_rf_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (Apache-2.0) (file has no license header)"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_module.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_module.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_rf_paramset.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/gnucap/models/sg13g2_moslv_rf_paramset.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (Apache-2.0) (file has no license header)"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/cap_cmomf/cap_cmomf.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/cap_cmomf/cap_cmomf.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/cap_cmomi/cap_cmomi.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/cap_cmomi/cap_cmomi.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/mosvar/macrosAndDefines_cmc.va",
+  "committed": false,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/mosvar/macrosAndDefines_cmc.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/mosvar/mosvar.va",
+  "committed": false,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/mosvar/mosvar.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/mosvar/mosvarpspMacros.va",
+  "committed": false,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/mosvar/mosvarpspMacros.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/r3_cmc/r3_cmc.va",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/r3_cmc/r3_cmc.va",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "IHP-Open-PDK/ihp-sg13g2/libs.tech/verilog-a/r3_cmc/r3_cmc_macros.include",
+  "committed": true,
+  "source_repo": "IHP-GmbH/IHP-Open-PDK",
+  "commit": "5e6d592e4002946a4616f798c357f0f3c06cf3b6",
+  "upstream_path": "ihp-sg13g2/libs.tech/verilog-a/r3_cmc/r3_cmc_macros.include",
+  "license": "Apache-2.0",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/HEMT_With_GFP.va",
+  "committed": false,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "HEMT_With_GFP.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_constants.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_constants.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_extrinsic_diodes.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_extrinsic_diodes.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_extrinsic_resistances.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_extrinsic_resistances.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_fringing_capacitances.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_fringing_capacitances.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_overlap_capacitances.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_overlap_capacitances.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-VerilogA/hemt_parameters.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-VerilogA",
+  "commit": "7ddbc69a85ca31fb1975ace5bd94e40e8e81f39e",
+  "upstream_path": "hemt_parameters.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-SFP-VerilogA/HEMT_WithGFPSFP_extrinsic_resistances.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-SFP-VerilogA",
+  "commit": "a6f18df5c1aeadfc5845ce875b55ee83240c5e3f",
+  "upstream_path": "HEMT_WithGFPSFP_extrinsic_resistances.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-SFP-VerilogA/HEMT_WithGFPSFP_fringing_capacitances.va",
+  "committed": true,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-SFP-VerilogA",
+  "commit": "a6f18df5c1aeadfc5845ce875b55ee83240c5e3f",
+  "upstream_path": "HEMT_WithGFPSFP_fringing_capacitances.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "SahraEbm_GaN-HEMT-GFP-SFP-VerilogA/HEMT_With_GFPSFP.va",
+  "committed": false,
+  "source_repo": "SahraEbm/GaN-HEMT-GFP-SFP-VerilogA",
+  "commit": "a6f18df5c1aeadfc5845ce875b55ee83240c5e3f",
+  "upstream_path": "HEMT_With_GFPSFP.va",
+  "license": "CMC/BSIM-style license (royalty-free, modify+redistribute, attribution, no-charge-for-code)",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/adc_16bit_ideal.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "adc_16bit_ideal.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/bin2thermo.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "bin2thermo.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/ctle.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "ctle.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/dac_16bit_ideal.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "dac_16bit_ideal.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/dff_sr.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "dff_sr.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/pfd.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "pfd.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "ShabbyGayBar_verilogaLib/vc_res.va",
+  "committed": true,
+  "source_repo": "ShabbyGayBar/verilogaLib",
+  "commit": "a6cdb37055a811ee47d435ebfd4d0f4a0d298a09",
+  "upstream_path": "vc_res.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "YJ-Guan_VerilogA-Voltage_Controll_Oscillator/VCO.va",
+  "committed": true,
+  "source_repo": "YJ-Guan/VerilogA-Voltage_Controll_Oscillator",
+  "commit": "b8151ddc33c0a0803a17b924369b8041dff333e9",
+  "upstream_path": "VCO.va",
+  "license": "MIT",
+  "license_evidence": "/LICENSE (same directory; file has no license header)"
+ },
+ {
+  "path": "chiara-rossi_CompactModel_P-modulated-Schottky-junction/SchottkyGatedJunction_e.va",
+  "committed": true,
+  "source_repo": "chiara-rossi/CompactModel_P-modulated-Schottky-junction",
+  "commit": "ba89d07cb46f958dfb65b317ed7221d0fd61ecc5",
+  "upstream_path": "SchottkyGatedJunction_e.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "chiara-rossi_CompactModel_P-modulated-Schottky-junction/SchottkyGatedJunction_h.va",
+  "committed": true,
+  "source_repo": "chiara-rossi/CompactModel_P-modulated-Schottky-junction",
+  "commit": "ba89d07cb46f958dfb65b317ed7221d0fd61ecc5",
+  "upstream_path": "SchottkyGatedJunction_h.va",
+  "license": "MIT",
+  "license_evidence": "file header"
+ },
+ {
+  "path": "j1s1e1_veriloga_examples/veriloga/count_clock_pulses.va",
+  "committed": true,
+  "source_repo": "j1s1e1/veriloga_examples",
+  "commit": "b1bba4228d269b0f55eb4908b5398ad44373d44c",
+  "upstream_path": "veriloga/count_clock_pulses.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "j1s1e1_veriloga_examples/veriloga/count_clock_pulses_limexp.va",
+  "committed": true,
+  "source_repo": "j1s1e1/veriloga_examples",
+  "commit": "b1bba4228d269b0f55eb4908b5398ad44373d44c",
+  "upstream_path": "veriloga/count_clock_pulses_limexp.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "j1s1e1_veriloga_examples/veriloga/smooth.va",
+  "committed": true,
+  "source_repo": "j1s1e1/veriloga_examples",
+  "commit": "b1bba4228d269b0f55eb4908b5398ad44373d44c",
+  "upstream_path": "veriloga/smooth.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "j1s1e1_veriloga_examples/veriloga/smooth_sigmoid.va",
+  "committed": true,
+  "source_repo": "j1s1e1/veriloga_examples",
+  "commit": "b1bba4228d269b0f55eb4908b5398ad44373d44c",
+  "upstream_path": "veriloga/smooth_sigmoid.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "mikprin_verilogA/ADC/electrical_out.va",
+  "committed": true,
+  "source_repo": "mikprin/verilogA",
+  "commit": "832e830fc6b874a19ce523743d25ed9e1e7ec2fc",
+  "upstream_path": "ADC/electrical_out.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "mikprin_verilogA/ADC/wire_out.va",
+  "committed": true,
+  "source_repo": "mikprin/verilogA",
+  "commit": "832e830fc6b874a19ce523743d25ed9e1e7ec2fc",
+  "upstream_path": "ADC/wire_out.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "mikprin_verilogA/DAC/dac.va",
+  "committed": true,
+  "source_repo": "mikprin/verilogA",
+  "commit": "832e830fc6b874a19ce523743d25ed9e1e7ec2fc",
+  "upstream_path": "DAC/dac.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "joaln27_devphys/05_compact/ekv_lite.va",
+  "committed": true,
+  "source_repo": "joaln27/devphys",
+  "commit": "bcae3beebcaaeb15a1937af996f43e0bc15bcdb4",
+  "upstream_path": "05_compact/ekv_lite.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "jurjsorinliviu_Psi-Vortex/results/manuscript_record/artifacts/psi_vortex_student.va",
+  "committed": true,
+  "source_repo": "jurjsorinliviu/Psi-Vortex",
+  "commit": "28925f2ba19346a09e78e7d6d83525f66134e23a",
+  "upstream_path": "results/manuscript_record/artifacts/psi_vortex_student.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "rajinthanr_pll-ihp-sg13g2/src/freq_div.va",
+  "committed": true,
+  "source_repo": "rajinthanr/pll-ihp-sg13g2",
+  "commit": "ca2c7e529e606e9cfa8d195cd6d64a9f9cdc8ce8",
+  "upstream_path": "src/freq_div.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "phgrove_ams_util/connect_modules/bidir.vams",
+  "committed": true,
+  "source_repo": "phgrove/ams_util",
+  "commit": "03d97ecfe30198ff1e54acf7b17fa6cbd3f18365",
+  "upstream_path": "connect_modules/bidir.vams",
+  "license": "MIT-0",
+  "license_evidence": "LICENSE (MIT No Attribution) and file header"
+ },
+ {
+  "path": "phgrove_ams_util/connect_modules/crules.vams",
+  "committed": true,
+  "source_repo": "phgrove/ams_util",
+  "commit": "03d97ecfe30198ff1e54acf7b17fa6cbd3f18365",
+  "upstream_path": "connect_modules/crules.vams",
+  "license": "MIT-0",
+  "license_evidence": "LICENSE (MIT No Attribution) and file header"
+ },
+ {
+  "path": "phgrove_ams_util/connect_modules/e2l.vams",
+  "committed": true,
+  "source_repo": "phgrove/ams_util",
+  "commit": "03d97ecfe30198ff1e54acf7b17fa6cbd3f18365",
+  "upstream_path": "connect_modules/e2l.vams",
+  "license": "MIT-0",
+  "license_evidence": "LICENSE (MIT No Attribution) and file header"
+ },
+ {
+  "path": "phgrove_ams_util/connect_modules/l2e.vams",
+  "committed": true,
+  "source_repo": "phgrove/ams_util",
+  "commit": "03d97ecfe30198ff1e54acf7b17fa6cbd3f18365",
+  "upstream_path": "connect_modules/l2e.vams",
+  "license": "MIT-0",
+  "license_evidence": "LICENSE (MIT No Attribution) and file header"
+ },
+ {
+  "path": "phgrove_ams_util/connect_modules/snps_globals.vams",
+  "committed": true,
+  "source_repo": "phgrove/ams_util",
+  "commit": "03d97ecfe30198ff1e54acf7b17fa6cbd3f18365",
+  "upstream_path": "connect_modules/snps_globals.vams",
+  "license": "MIT-0",
+  "license_evidence": "LICENSE (MIT No Attribution) and file header"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_AMUL_Bias_DW3b/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_AMUL_Bias_DW3b/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_AMUL_VIN_IO_DW3b/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_AMUL_VIN_IO_DW3b/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_BiasDAC_3bit/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_BiasDAC_3bit/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Buffer_Analog/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Buffer_Analog/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Buffer_Digi/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Buffer_Digi/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Current_Buffer_Regulator/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Current_Buffer_Regulator/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Current_Subtractor/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Current_Subtractor/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_I2V_Converter/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_I2V_Converter/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Inverter_Digi/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Inverter_Digi/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_PassGate_Switch/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_PassGate_Switch/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Softmax/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_Softmax/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "numano1_mnist_veriloga/library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_vReLU/veriloga/veriloga.va",
+  "committed": true,
+  "source_repo": "numano1/mnist_veriloga",
+  "commit": "de328a7bd93f7b02a17cd66106ae4123321065c8",
+  "upstream_path": "library_models/PipeLine_FC2_A48A_ReLU_AP_HW_MeM_VAModel/FC2_vReLU/veriloga/veriloga.va",
+  "license": "MIT",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/check.vh",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/check.vh",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/erfc.vh",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/erfc.vh",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/010_display_formats.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/010_display_formats.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/011_severity_tasks.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/011_severity_tasks.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/012_directives.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/012_directives.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/020_real_arithmetic.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/020_real_arithmetic.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/021_integer_arithmetic.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/021_integer_arithmetic.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/022_comparison_logic.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/022_comparison_logic.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/023_bitwise_shift.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/023_bitwise_shift.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/024_conditional_operator.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/024_conditional_operator.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/025_type_conversions.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/025_type_conversions.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/040_exp_log_pow.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/040_exp_log_pow.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/041_rounding_selection.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/041_rounding_selection.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/042_trigonometric.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/042_trigonometric.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/043_hyperbolic.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/043_hyperbolic.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/044_limexp.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/044_limexp.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/060_ddt_charge.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/060_ddt_charge.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/061_ddx_derivative.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/061_ddx_derivative.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/062_idt_integral.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/062_idt_integral.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/063_transition.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/063_transition.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/064_slew.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/064_slew.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/065_absdelay.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/065_absdelay.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/066_laplace_dc_gain.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/066_laplace_dc_gain.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/067_zi_sample_hold.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/067_zi_sample_hold.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/068_idtmod.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/068_idtmod.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/069_last_crossing_direction.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/069_last_crossing_direction.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/070_event_hold.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/070_event_hold.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/071_timer_breakpoint_periodic.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/071_timer_breakpoint_periodic.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/072_timer_breakpoint_one_shot.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/072_timer_breakpoint_one_shot.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/080_resistor.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/080_resistor.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/081_diode.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/081_diode.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/082_voltage_source.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/082_voltage_source.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/083_controlled_sources.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/083_controlled_sources.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/084_indirect_contribution.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/084_indirect_contribution.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/085_conditional_contribution.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/085_conditional_contribution.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/086_named_branch.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/086_named_branch.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/087_internal_node.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/087_internal_node.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/088_mfactor.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/088_mfactor.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/100_parameters.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/100_parameters.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/101_analog_function.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/101_analog_function.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/102_loops.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/102_loops.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/103_case_statement.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/103_case_statement.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/104_loop_two_units.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/104_loop_two_units.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/120_environment.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/120_environment.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/121_analysis_kind.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/121_analysis_kind.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/122_bit_conversions.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/122_bit_conversions.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ },
+ {
+  "path": "OmarSiwy_VerA/tests/fixtures/exhaustive/123_math_system_names.va",
+  "committed": true,
+  "source_repo": "OmarSiwy/VerA",
+  "commit": "67f797d13051ab320c385c759f773dc9c8f1759e",
+  "upstream_path": "tests/fixtures/exhaustive/123_math_system_names.va",
+  "license": "Apache-2.0",
+  "license_evidence": "repo LICENSE (file has no license header)"
+ }
+]

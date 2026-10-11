@@ -1,0 +1,30 @@
+// VerilogA for LeNet3, PassGate, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_PassGate_Switch(inout V1, inout V2, input Ctrl);
+  parameter real Vhigh = 1.2; // High state voltage (not directly used here, but can be useful)
+  parameter real Vlow = 0.0;  // Low state voltage (ditto)
+  parameter real Vth = 0.6;   // Control threshold voltage
+  parameter real Rlow = 1;    // Low state resistance (closed switch)
+  parameter real Rhigh = 1e9; // High state resistance (open switch)
+  parameter real Gmin = 1e-12;  // Minimum conductance
+
+  electrical V1, V2, Ctrl;
+  real R; // Resistance for the transmission gate
+
+  analog begin
+    // Determine the resistance based on the control voltage.
+    if (V(Ctrl) > Vth) begin
+      R = Rlow; // Close the transmission gate
+    end else begin
+      R = Rhigh; // Open the transmission gate
+    end
+
+    // Model the transmission gate as a resistive connection.
+    // Using Gmin * (V(V1) - V(V2)) scales the leakage with the voltage difference.
+    I(V1, V2) <+ V(V1, V2) / R + Gmin * (V(V1) - V(V2));
+  end
+endmodule
+

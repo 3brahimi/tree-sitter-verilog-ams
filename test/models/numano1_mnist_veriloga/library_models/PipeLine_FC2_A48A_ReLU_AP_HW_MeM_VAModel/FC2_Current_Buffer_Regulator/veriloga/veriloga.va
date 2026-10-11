@@ -1,0 +1,20 @@
+// VerilogA for current buffer regulator
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_Current_Buffer_Regulator(inout iin, inout iout, input Vreg);
+  electrical iin, iout, Vreg;
+  real abs1;
+ 
+  analog begin
+    // Regulate input terminals
+    V(iin) <+ V(Vreg);
+
+    // Compute the absolute value of each input current.
+    //abs1 = (I(iin) >= 0 ? I(iin) : -I(iin));
+
+	//bypass the current
+    I(iout) <+ -I(iin);
+  end
+endmodule

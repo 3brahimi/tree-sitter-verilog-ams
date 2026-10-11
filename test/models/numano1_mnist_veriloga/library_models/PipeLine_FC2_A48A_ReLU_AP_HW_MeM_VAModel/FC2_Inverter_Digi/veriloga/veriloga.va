@@ -1,0 +1,24 @@
+// VerilogA for LeNet3, Inverter, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+
+module FC2_Inverter_Digi(Vin, Vout);
+  input Vin;
+  output Vout;
+  electrical Vin, Vout;
+
+  parameter real Vhigh = 1.2; // High state voltage
+  parameter real Vlow = 0; // Low state voltage
+  parameter real Vth = 0.6; // Threshold voltage
+
+  analog begin
+    // Check the input voltage and invert it
+    if (V(Vin) > Vth) begin
+      V(Vout) <+ Vlow;
+    end else if (V(Vin) <= Vth) begin
+      V(Vout) <+ Vhigh;
+    end
+  end
+endmodule

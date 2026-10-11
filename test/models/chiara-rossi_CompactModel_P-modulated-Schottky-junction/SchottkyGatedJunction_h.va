@@ -1,0 +1,135 @@
+// Polarization-modulated Schottky junction v2 (holes, p-type branch) 
+// Last revision: October 2025
+//
+// Author: Chiara Rossi
+// Supervisor: David Esseni
+// DPIA - University of Udine
+//
+// Marie Skłodowska-Curie Actions (MSCA) Postdoctoral Fellowship
+// EASIFeT - Funded by the European Union
+// 
+// This work has received funding from the European Union’s Horizon Europe research and innovation programme under the Marie Skłodowska-Curie Actions Postdoctoral Fellowships, project No. 101108023 (EASIFeT)
+//
+// This project is licensed under the terms of the MIT license.
+//
+`include "constants.h"
+`include "disciplines.vams"
+
+(*compact_module*)
+module SchGDiode_h_v2(cathode,anode,netcharge);		
+inout      cathode,anode,netcharge;
+electrical cathode,anode,netcharge;
+
+
+//Technology parameters
+parameter real  A=20e-11;	//[cm^2]	
+parameter real  SBH_n=0.6;	//[eV] Schottky Barrier Height for electron
+parameter real  Eg=1.12;	////[eV] semiconductor band gap
+parameter real  A_re_p=30;	//[A/(cm^2K^2)] reduced effective Richardson constant for holes
+parameter real  N=1e15;		//[cm^-3] doping concentration
+parameter real  Nv=1.8e19;	//[cm^-3] Effective valence band density of states
+parameter real  m_0=9.11e-31;	//[kg] m0 free electron mass
+parameter real  m_eff=0.6;	//[] prefactor that multiplies m0 to obtain the effective mass
+parameter real  eps_s =11.7;	//[] semiconductor dielectric constant
+parameter real  fQ =1e3;	//fitting factor used for equivalent electrostatic doping 
+parameter real  fe =0.6; 	//fitting factor used for equivalent electrostatic doping 
+
+//Internal Parameters
+real  E_00,E_00_dop,E_0,E_00_KT;			//
+real  phi_p,SBH_p,N_m3;			// 
+real  eps,A_re_p_t;			// 
+real  K,KT;			// 
+real  m_star,h_bar,c1;			// 
+real  J_FE_R,J_TFE_F,J_TFE_R,Jtot;	//
+real  f0,f1,f2,f3,f4;
+real  Qs, Nel, Ntot;
+
+analog begin
+	@(initial_step) begin
+
+		f0=1;		//Debug multipliers 
+		f1=1;		 
+		f2=1;		
+		f3=1;			
+
+	end
+
+//******************************************************//
+// 	Equivalence doping/FEcharge			                    //
+//******************************************************//
+	if (V(netcharge)<=0) begin
+	Qs=-V(netcharge)/(`P_Q*20e-7);    //[cm^-3] -> V(netcharge) in C/cm2
+	Nel=Qs*fQ*pow(-V(netcharge),fe);   
+	end else begin
+	Nel=0;
+	end
+
+	Ntot=N+Nel;   //[cm^-3]
+
+	
+//******************************************************//
+// 	Parameters					                                 //
+//******************************************************//
+
+	SBH_p=Eg-SBH_n;			//[eV] Schottky Barrier Height for electron
+	h_bar=`P_H/(2*`M_PI*`P_Q);	//[eV s]
+	eps=eps_s*`P_EPS0;		// [farads/meter]
+	N_m3=Ntot*1e6;			// [m^-3]
+	m_star=m_0*m_eff;		//[kg]
+	K=`P_K/(`P_Q);
+	E_00=(`P_Q*h_bar/2)*sqrt(N_m3/(m_star*eps));
+	E_00_dop=(`P_Q*h_bar/2)*sqrt(N*1e6/(m_star*eps));
+	E_0=E_00*cosh(E_00/(K*$temperature))/sinh(E_00/(K*$temperature));
+	J_FE_R=0;
+	J_TFE_F=0;
+	J_TFE_R=0;
+	phi_p=-K*$temperature*ln(Nv/N);
+	KT=K*$temperature;
+	A_re_p_t=4*`M_PI*`P_Q*m_star*pow(`P_K,2)/(pow(`P_H,3))*1e-4;     //[A/(cm^2K^2)]
+
+//******************************************************//
+// Thermionic-Field emission current (forward bias)	    //
+//******************************************************//
+
+	J_TFE_F=f1*A_re_p*$temperature*sqrt(`M_PI*E_00_dop*(SBH_p-phi_p-V(anode,cathode)))/(K*cosh(E_00_dop/(K*$temperature)))*limexp(-phi_p/(K*$temperature)-(SBH_p-phi_p)/E_0)*limexp(V(anode,cathode)/E_0);
+
+//******************************************************//
+// Field emission current (reverse bias)		            //
+//******************************************************//
+		 
+	J_FE_R=f1*A_re_p_t*pow((E_00/K),2)*((SBH_p+V(cathode,anode))/SBH_p)*limexp(-(2*pow(SBH_p,(3/2)))/(3*E_00*sqrt(SBH_p+V(cathode,anode)))); 
+	
+	
+//******************************************************//
+// Thermionic-Field emission current (reverse bias)	    //
+//******************************************************//
+
+	//E_00_KT=E_00/((E_00/(K*$temperature))-tanh(E_00/(K*$temperature)));
+	E_00_KT=E_00_dop/((E_00_dop/(K*$temperature))-tanh(E_00_dop/(K*$temperature)));
+	if (E_00<=KT) begin
+	//if (Ntot<=9e18) begin
+	J_TFE_R=f3*A_re_p*$temperature/K*sqrt(`M_PI*E_00*(V(cathode,anode)+SBH_p/(pow(cosh(E_00/(K*$temperature)),2))))*limexp(-SBH_p/E_0)*limexp(V(cathode,anode)/E_00_KT);
+	end else begin
+	J_TFE_R=0;
+	end
+
+//******************************************************//
+// Total current 				                              	//
+//******************************************************//
+	Jtot=(-J_FE_R+J_TFE_F-J_TFE_R);
+	I(anode,cathode) <+ A*Jtot;
+
+	$debug("J_FE_R: ",J_FE_R);
+	$debug("J_TFE_F: ",J_TFE_F);
+	$debug("J_TFE_R: ",J_TFE_R);
+	$debug("N,Qs,Ntot: ",N,Qs,Ntot);
+
+	//Maximum current density 1mA/um2
+	if (abs(I(cathode,anode)/(A*1e12))>=1e-3) begin
+		$strobe("**FAILURE DETECTED** %M limit current exceeded!");
+	end
+
+
+end
+endmodule
+

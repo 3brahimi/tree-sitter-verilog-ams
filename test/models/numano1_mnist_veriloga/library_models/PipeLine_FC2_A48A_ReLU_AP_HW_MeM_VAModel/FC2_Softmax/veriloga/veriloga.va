@@ -1,0 +1,44 @@
+// VerilogA for LeNet5M_FC_84x10_HW_MeM_Model, Softmax, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_Softmax(inout [0:9] vin, inout [0:9] vout);
+  parameter real scale = 1.0; // Scaling factor for exponentials
+
+  electrical [0:9] vin, vout; // Electrical inputs and outputs
+
+  real exp_val0, exp_val1, exp_val2, exp_val3, exp_val4;
+  real exp_val5, exp_val6, exp_val7, exp_val8, exp_val9;
+  real sum_exp; // Sum of exponentials
+
+  analog begin
+    // Compute exponentials
+    exp_val0 = exp(V(vin[0]) / scale);
+    exp_val1 = exp(V(vin[1]) / scale);
+    exp_val2 = exp(V(vin[2]) / scale);
+    exp_val3 = exp(V(vin[3]) / scale);
+    exp_val4 = exp(V(vin[4]) / scale);
+    exp_val5 = exp(V(vin[5]) / scale);
+    exp_val6 = exp(V(vin[6]) / scale);
+    exp_val7 = exp(V(vin[7]) / scale);
+    exp_val8 = exp(V(vin[8]) / scale);
+    exp_val9 = exp(V(vin[9]) / scale);
+
+    // Compute sum of exponentials
+    sum_exp = exp_val0 + exp_val1 + exp_val2 + exp_val3 + exp_val4 + exp_val5 + exp_val6 + exp_val7 + exp_val8 + exp_val9;
+
+    // Compute softmax outputs
+    V(vout[0]) <+ exp_val0 / sum_exp;
+    V(vout[1]) <+ exp_val1 / sum_exp;
+    V(vout[2]) <+ exp_val2 / sum_exp;
+    V(vout[3]) <+ exp_val3 / sum_exp;
+    V(vout[4]) <+ exp_val4 / sum_exp;
+    V(vout[5]) <+ exp_val5 / sum_exp;
+    V(vout[6]) <+ exp_val6 / sum_exp;
+    V(vout[7]) <+ exp_val7 / sum_exp;
+    V(vout[8]) <+ exp_val8 / sum_exp;
+    V(vout[9]) <+ exp_val9 / sum_exp;
+  end
+endmodule
+

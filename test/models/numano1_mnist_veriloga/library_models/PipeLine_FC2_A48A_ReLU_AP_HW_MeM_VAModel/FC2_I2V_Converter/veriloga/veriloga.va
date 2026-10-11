@@ -1,0 +1,23 @@
+// VerilogA for PipeLine_CNN1_448A_ReLU_AP_HW_MeM_VAModel, I2V_Converter, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_I2V_Converter(inout Iin, output vout, input Vreg);
+  electrical Iin, vout, Vreg;
+  
+  // Parameters
+
+  parameter real R_FB = 100e3;   // Reference resistor in ohms.
+  
+  analog begin
+    
+   // Convert input current to output voltage using the scaled formula:
+   // vout = Voffset + scale * (-Iin * R_FB)
+   // V(vout) <+ Voffset + scale * (-I(Iin) * R_FB);
+    V(Iin) <+  V(Vreg);
+	//V(vout) <+ Voffset + (-I(Iin) * R_FB);
+	V(vout) <+  V(Vreg) + (I(Iin) * R_FB);
+  end
+endmodule
+

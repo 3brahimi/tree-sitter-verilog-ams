@@ -1,0 +1,23 @@
+// VerilogA for LeNet3, Buffer, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_Buffer_Analog(Vin, Vout);
+  input Vin;
+  output Vout;
+  electrical Vin, Vout;
+
+  parameter real gain = 1e6; // High gain to approximate ideal buffer
+  parameter real Rin = 1e12; // Very high input impedance (1 T)
+  parameter real Rout = 1;   // Low output impedance
+
+  analog begin
+    // Ensure very high input impedance (virtually no current drawn from Vin)
+    I(Vin) <+ V(Vin) / Rin;  // Nearly zero current into Vin
+    
+    // Voltage follower with high gain approximation
+    V(Vout) <+ (gain / (gain + 1)) * V(Vin);
+  end
+endmodule
+

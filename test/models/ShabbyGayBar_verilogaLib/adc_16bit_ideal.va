@@ -1,0 +1,87 @@
+`include "discipline.h"
+`include "constants.h"
+
+//--------------------
+//
+// adc_16bit_ideal
+//
+// - Ideal 16 bit analog to digital converter
+//
+// vin:      [V,A]
+// vclk:     [V,A]
+// vd:       data output bus [V,A]
+//
+// INSTANCE parameters
+//    tdel, trise, tfall = {usual} [s]
+//    vlogic_high = [V]
+//    vlogic_low  = [V]
+//    vtrans_clk  = clk high to low transition voltage [V]
+//    vref        = voltage that voltage is done with respect to [V]
+//
+// MODEL parameters
+//    {none}
+//
+// This model is ideal in the sense that there is no mismatch modeled.
+//
+
+`define NUM_ADC_BITS 16
+
+module adc_16bit_ideal(vin, vclk, vd);
+
+input vin, vclk;
+output [`NUM_ADC_BITS-1:0] vd;
+
+electrical vin, vclk;
+electrical [`NUM_ADC_BITS-1:0] vd;
+
+parameter real trise = 0 from [0:inf);
+parameter real tfall = 0 from [0:inf);
+parameter real tdel  = 0 from [0:inf);
+
+parameter real vlogic_high = 5;
+parameter real vlogic_low  = 0;
+parameter real vtrans_clk  = 2.5;
+parameter real vref        = 1.0;
+
+real unconverted;
+real halfref;
+
+real vd_value[0:`NUM_ADC_BITS-1];
+integer i;
+genvar bit_idx;
+
+analog begin
+
+    @(initial_step) begin
+        halfref = vref / 2;
+    end
+
+    @(cross(V(vclk) - vtrans_clk, 1)) begin
+        unconverted = V(vin);
+
+        for (i = (`NUM_ADC_BITS-1); i >= 0; i = i - 1) begin
+            vd_value[i] = 0;
+
+            if (unconverted > halfref) begin
+                vd_value[i] = vlogic_high;
+                unconverted = unconverted - halfref;
+            end else begin
+                vd_value[i] = vlogic_low;
+            end
+
+            unconverted = unconverted * 2;
+        end
+    end
+
+    //
+    // assign the outputs
+    //
+    for (bit_idx = 0; bit_idx < `NUM_ADC_BITS; bit_idx = bit_idx + 1) begin
+        V(vd[bit_idx]) <+ transition(vd_value[bit_idx], tdel, trise, tfall);
+    end
+
+end
+
+endmodule
+
+`undef NUM_ADC_BITS

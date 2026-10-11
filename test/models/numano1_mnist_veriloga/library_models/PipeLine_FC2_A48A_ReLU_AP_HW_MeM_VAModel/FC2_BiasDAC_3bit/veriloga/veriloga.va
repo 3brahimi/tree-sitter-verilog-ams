@@ -1,0 +1,36 @@
+// VerilogA for Kovilta_VerilogA_model, DAC_8bit, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module FC2_BiasDAC_3bit(input [2:0] bin, output Vout, input VFS_IN, input VZS_IN);
+  parameter real Vth = 0.6; // Threshold voltage
+  electrical VFS_IN;
+  electrical VZS_IN;
+  electrical Vout;
+  electrical [2:0] bin;
+  real dac_value; // DAC value
+  real dac_value_V; // DAC output value
+  integer N = 3; // Wx resolution
+  genvar i;
+
+  analog begin
+
+    // Convert binary input to real value
+    dac_value = 0;
+    for (i = 0; i < 3; i = i + 1) begin
+      if (V(bin[i]) > Vth) begin
+        dac_value = dac_value + 2**i;
+      end
+		else begin
+			dac_value = dac_value + 0;
+		end
+    end
+
+    // Normalize to [0, 1] and scale to [VZS, VFS]
+    dac_value_V = ((dac_value / (2**N)) * (V(VFS_IN) - V(VZS_IN))) + V(VZS_IN);
+
+    // Output the DAC value
+    V(Vout) <+ dac_value_V;
+  end
+endmodule
