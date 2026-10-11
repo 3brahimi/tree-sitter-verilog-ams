@@ -1,0 +1,18 @@
+tree-sitter-verilog-ams
+Copyright (c) 2026 Masoud Ebrahimi
+Licensed under the MIT License (see LICENSE).
+
+This grammar extends tree-sitter-systemverilog, which is vendored unmodified
+in vendor/tree-sitter-systemverilog/ and is used and redistributed under its
+own license:
+
+  tree-sitter-systemverilog
+  https://github.com/gmlarumbe/tree-sitter-systemverilog
+  MIT License, Copyright (c) 2024-2025 Gonzalo M. Larumbe
+  Full text: vendor/tree-sitter-systemverilog/LICENSE
+
+The generated parser in src/ is derived from both grammars.
+
+The Verilog-A/AMS models under test/models/ are third-party files, each kept
+under its own license (MIT, MIT-0 or Apache-2.0). The license text of each
+source sits next to its files; test/README.md lists sources and commits.

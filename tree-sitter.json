@@ -1,0 +1,36 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "verilog_ams",
+      "camelcase": "VerilogAMS",
+      "title": "Verilog-AMS",
+      "scope": "source.verilog_ams",
+      "file-types": [
+        "va",
+        "vams"
+      ],
+      "injection-regex": "^(verilog_ams|verilog-ams|veriloga)$",
+      "class-name": "TreeSitterVerilogAms"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Verilog-AMS and Verilog-A grammar for tree-sitter, extending tree-sitter-systemverilog",
+    "authors": [
+      {
+        "name": "Masoud Ebrahimi"
+      }
+    ]
+  },
+  "bindings": {
+    "c": false,
+    "go": false,
+    "node": false,
+    "python": true,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}

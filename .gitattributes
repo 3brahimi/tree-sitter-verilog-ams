@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+# Generated source files
+src/*.json linguist-generated
+src/parser.c linguist-generated
+src/tree_sitter/* linguist-generated
+
+# Python bindings
+bindings/python/** linguist-generated
+setup.py linguist-generated
+pyproject.toml linguist-generated
+
+# Vendored base grammar
+vendor/** linguist-vendored
+
+# Third-party test models keep their original bytes (some use CRLF)
+test/models/** -text
