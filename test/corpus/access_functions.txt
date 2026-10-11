@@ -1,0 +1,209 @@
+============================================================
+Access functions in expressions
+============================================================
+
+module m(a, b);
+  electrical a, b;
+  real x;
+  analog begin
+    x = V(a) + V(a, b) - I(<b>);
+    x = V(top.sub.n);
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (non_integer_type)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (blocking_assignment
+                        (operator_assignment
+                          (variable_lvalue
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (assignment_operator)
+                          (expression
+                            (expression
+                              (expression
+                                (primary
+                                  (branch_probe
+                                    (hierarchical_identifier
+                                      (simple_identifier))
+                                    (branch_terminal
+                                      (hierarchical_identifier
+                                        (simple_identifier))))))
+                              (expression
+                                (primary
+                                  (branch_probe
+                                    (hierarchical_identifier
+                                      (simple_identifier))
+                                    (branch_terminal
+                                      (hierarchical_identifier
+                                        (simple_identifier)))
+                                    (branch_terminal
+                                      (hierarchical_identifier
+                                        (simple_identifier)))))))
+                            (expression
+                              (primary
+                                (branch_probe
+                                  (hierarchical_identifier
+                                    (simple_identifier))
+                                  (hierarchical_identifier
+                                    (simple_identifier)))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (blocking_assignment
+                        (operator_assignment
+                          (variable_lvalue
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (assignment_operator)
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier)
+                                    (simple_identifier)
+                                    (simple_identifier)))))))))))))))))))
+
+============================================================
+Macro node names as branch terminals
+============================================================
+
+module m(d, g, b);
+  electrical d, g, b;
+  branch (`DI, b) bdi;
+  analog begin
+    I(d, `DI) <+ gds * V(d, `DI);
+    x = V(`GI, `BI);
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_nonansi_header
+      (module_keyword)
+      (simple_identifier)
+      (list_of_ports
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))
+        (port
+          (simple_identifier))))
+    (module_item
+      (data_declaration
+        (data_type_or_implicit
+          (data_type
+            (simple_identifier)))
+        (list_of_variable_decl_assignments
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier))
+          (variable_decl_assignment
+            (simple_identifier)))))
+    (module_item
+      (branch_declaration
+        (branch_terminal
+          (text_macro_usage
+            (simple_identifier)))
+        (branch_terminal
+          (hierarchical_identifier
+            (simple_identifier)))
+        (simple_identifier)))
+    (module_item
+      (analog_construct
+        (statement_or_null
+          (statement
+            (statement_item
+              (seq_block
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (contribution_statement
+                        (branch_probe
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (branch_terminal
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (branch_terminal
+                            (text_macro_usage
+                              (simple_identifier))))
+                        (expression
+                          (expression
+                            (primary
+                              (hierarchical_identifier
+                                (simple_identifier))))
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (hierarchical_identifier
+                                    (simple_identifier)))
+                                (branch_terminal
+                                  (text_macro_usage
+                                    (simple_identifier)))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (blocking_assignment
+                        (operator_assignment
+                          (variable_lvalue
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (assignment_operator)
+                          (expression
+                            (primary
+                              (branch_probe
+                                (hierarchical_identifier
+                                  (simple_identifier))
+                                (branch_terminal
+                                  (text_macro_usage
+                                    (simple_identifier)))
+                                (branch_terminal
+                                  (text_macro_usage
+                                    (simple_identifier)))))))))))))))))))

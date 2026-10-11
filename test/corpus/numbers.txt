@@ -1,0 +1,218 @@
+============================================================
+Scale-factor literals
+============================================================
+
+module m;
+  parameter real a = 1k, b = 10n, c = 2.5u, d = 4.7M, e = 1T, f = 3G;
+  parameter real g = 1m, h = 5p, i = 2f, j = 1a, k = 1K;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number))))))))))))
+
+============================================================
+Time literals keep their SystemVerilog parse
+============================================================
+
+module m;
+  initial #1ns x = 1;
+  initial #10ms x = 2;
+  initial #1fs x = 3;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (initial_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (procedural_timing_control_statement
+              (delay_control
+                (delay_value
+                  (time_literal
+                    (unsigned_number)
+                    (time_unit))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (blocking_assignment
+                      (operator_assignment
+                        (variable_lvalue
+                          (hierarchical_identifier
+                            (simple_identifier)))
+                        (assignment_operator)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (integral_number
+                                (decimal_number
+                                  (unsigned_number))))))))))))))))
+    (initial_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (procedural_timing_control_statement
+              (delay_control
+                (delay_value
+                  (time_literal
+                    (unsigned_number)
+                    (time_unit))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (blocking_assignment
+                      (operator_assignment
+                        (variable_lvalue
+                          (hierarchical_identifier
+                            (simple_identifier)))
+                        (assignment_operator)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (integral_number
+                                (decimal_number
+                                  (unsigned_number))))))))))))))))
+    (initial_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (procedural_timing_control_statement
+              (delay_control
+                (delay_value
+                  (time_literal
+                    (unsigned_number)
+                    (time_unit))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (blocking_assignment
+                      (operator_assignment
+                        (variable_lvalue
+                          (hierarchical_identifier
+                            (simple_identifier)))
+                        (assignment_operator)
+                        (expression
+                          (primary
+                            (primary_literal
+                              (integral_number
+                                (decimal_number
+                                  (unsigned_number))))))))))))))))))

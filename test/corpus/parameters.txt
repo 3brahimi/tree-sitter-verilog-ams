@@ -1,0 +1,379 @@
+============================================================
+Parameter value ranges
+============================================================
+
+module m;
+  parameter real r = 1k from (0:inf);
+  parameter real t = 27 from [-273.15:inf) exclude 0;
+  parameter integer n = 1 from [1:10] exclude (4:6);
+  parameter real g = 0 from (-inf:inf);
+  parameter string ptype = "n" from '{"n", "p"};
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number)))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))
+            (infinity)))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (integral_number
+                      (decimal_number
+                        (unsigned_number))))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (unary_operator)
+              (constant_primary
+                (primary_literal
+                  (real_number
+                    (fixed_point_number)))))
+            (infinity))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (integer_atom_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (integral_number
+                      (decimal_number
+                        (unsigned_number))))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number)))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (integral_number
+                      (decimal_number
+                        (unsigned_number))))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (infinity)
+            (infinity)))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (string_literal
+                      (quoted_string
+                        (quoted_string_item))))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (assignment_pattern
+              (expression
+                (primary
+                  (primary_literal
+                    (string_literal
+                      (quoted_string
+                        (quoted_string_item))))))
+              (expression
+                (primary
+                  (primary_literal
+                    (string_literal
+                      (quoted_string
+                        (quoted_string_item)))))))))))))
+
+============================================================
+Parameter alias
+============================================================
+
+module m;
+  parameter real dtemp = 0;
+  aliasparam trise = dtemp;
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (integral_number
+                      (decimal_number
+                        (unsigned_number)))))))))))
+    (aliasparam_declaration
+      (simple_identifier)
+      (simple_identifier))))
+
+============================================================
+Parameter with attributes
+============================================================
+
+module m;
+  (* desc = "resistance", units = "Ohm" *) parameter real r = 1k from (0:inf);
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (attribute_instance
+      (attr_spec
+        (simple_identifier)
+        (constant_expression
+          (constant_primary
+            (primary_literal
+              (string_literal
+                (quoted_string
+                  (quoted_string_item)))))))
+      (attr_spec
+        (simple_identifier)
+        (constant_expression
+          (constant_primary
+            (primary_literal
+              (string_literal
+                (quoted_string
+                  (quoted_string_item))))))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (real_number
+                      (scaled_real_number)))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))
+            (infinity)))))))
+
+============================================================
+Parameter named type
+============================================================
+
+module m;
+  (* type = "instance", desc = "device type" *) parameter integer type = 1 from [-1:1] exclude 0;
+  real x;
+  analog begin
+    if (type == 1)
+      x = type * 2.0;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (attribute_instance
+      (attr_spec
+        (simple_identifier)
+        (constant_expression
+          (constant_primary
+            (primary_literal
+              (string_literal
+                (quoted_string
+                  (quoted_string_item)))))))
+      (attr_spec
+        (simple_identifier)
+        (constant_expression
+          (constant_primary
+            (primary_literal
+              (string_literal
+                (quoted_string
+                  (quoted_string_item))))))))
+    (parameter_declaration
+      (data_type_or_implicit
+        (data_type
+          (integer_atom_type)))
+      (list_of_param_assignments
+        (param_assignment
+          (simple_identifier)
+          (constant_param_expression
+            (constant_mintypmax_expression
+              (constant_expression
+                (constant_primary
+                  (primary_literal
+                    (integral_number
+                      (decimal_number
+                        (unsigned_number))))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (unary_operator)
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number)))))))
+          (parameter_value_range
+            (parameter_value_range_type)
+            (constant_expression
+              (constant_primary
+                (primary_literal
+                  (integral_number
+                    (decimal_number
+                      (unsigned_number))))))))))
+    (data_declaration
+      (data_type_or_implicit
+        (data_type
+          (non_integer_type)))
+      (list_of_variable_decl_assignments
+        (variable_decl_assignment
+          (simple_identifier))))
+    (analog_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (seq_block
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (conditional_statement
+                      (cond_predicate
+                        (expression
+                          (expression
+                            (primary
+                              (hierarchical_identifier
+                                (simple_identifier))))
+                          (expression
+                            (primary
+                              (primary_literal
+                                (integral_number
+                                  (decimal_number
+                                    (unsigned_number))))))))
+                      (statement_or_null
+                        (statement
+                          (statement_item
+                            (blocking_assignment
+                              (operator_assignment
+                                (variable_lvalue
+                                  (hierarchical_identifier
+                                    (simple_identifier)))
+                                (assignment_operator)
+                                (expression
+                                  (expression
+                                    (primary
+                                      (hierarchical_identifier
+                                        (simple_identifier))))
+                                  (expression
+                                    (primary
+                                      (primary_literal
+                                        (real_number
+                                          (fixed_point_number))))))))))))))))))))))

@@ -1,0 +1,231 @@
+============================================================
+AMS words used as SystemVerilog identifiers
+============================================================
+
+module m;
+  logic timer, above, transition, branch, flow, ddt, V;
+  always_ff @(posedge clk) begin
+    timer <= timer + 1;
+    above = transition & flow;
+    ddt = V;
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (data_declaration
+      (data_type_or_implicit
+        (data_type
+          (integer_vector_type)))
+      (list_of_variable_decl_assignments
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))
+        (variable_decl_assignment
+          (simple_identifier))))
+    (always_construct
+      (always_keyword)
+      (statement
+        (statement_item
+          (procedural_timing_control_statement
+            (event_control
+              (clocking_event
+                (event_expression
+                  (edge_identifier)
+                  (expression
+                    (primary
+                      (hierarchical_identifier
+                        (simple_identifier)))))))
+            (statement_or_null
+              (statement
+                (statement_item
+                  (seq_block
+                    (statement_or_null
+                      (statement
+                        (statement_item
+                          (nonblocking_assignment
+                            (variable_lvalue
+                              (hierarchical_identifier
+                                (simple_identifier)))
+                            (expression
+                              (expression
+                                (primary
+                                  (hierarchical_identifier
+                                    (simple_identifier))))
+                              (expression
+                                (primary
+                                  (primary_literal
+                                    (integral_number
+                                      (decimal_number
+                                        (unsigned_number)))))))))))
+                    (statement_or_null
+                      (statement
+                        (statement_item
+                          (blocking_assignment
+                            (operator_assignment
+                              (variable_lvalue
+                                (hierarchical_identifier
+                                  (simple_identifier)))
+                              (assignment_operator)
+                              (expression
+                                (expression
+                                  (primary
+                                    (hierarchical_identifier
+                                      (simple_identifier))))
+                                (expression
+                                  (primary
+                                    (hierarchical_identifier
+                                      (simple_identifier))))))))))
+                    (statement_or_null
+                      (statement
+                        (statement_item
+                          (blocking_assignment
+                            (operator_assignment
+                              (variable_lvalue
+                                (hierarchical_identifier
+                                  (simple_identifier)))
+                              (assignment_operator)
+                              (expression
+                                (primary
+                                  (hierarchical_identifier
+                                    (simple_identifier)))))))))))))))))))
+
+============================================================
+Task calls named like access functions stay task calls
+============================================================
+
+module m;
+  initial begin
+    Pwr(a);
+    V(a);
+    I(a, b);
+  end
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (initial_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (seq_block
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (subroutine_call_statement
+                      (subroutine_call
+                        (tf_call
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (list_of_arguments
+                            (expression
+                              (primary
+                                (hierarchical_identifier
+                                  (simple_identifier)))))))))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (subroutine_call_statement
+                      (subroutine_call
+                        (tf_call
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (list_of_arguments
+                            (expression
+                              (primary
+                                (hierarchical_identifier
+                                  (simple_identifier)))))))))))
+              (statement_or_null
+                (statement
+                  (statement_item
+                    (subroutine_call_statement
+                      (subroutine_call
+                        (tf_call
+                          (hierarchical_identifier
+                            (simple_identifier))
+                          (list_of_arguments
+                            (expression
+                              (primary
+                                (hierarchical_identifier
+                                  (simple_identifier))))
+                            (expression
+                              (primary
+                                (hierarchical_identifier
+                                  (simple_identifier))))))))))))))))))
+
+============================================================
+Call in a case item label
+============================================================
+
+module m;
+  initial case (x)
+    f(a): y = 1;
+  endcase
+endmodule
+
+----
+
+(source_file
+  (module_declaration
+    (module_ansi_header
+      (module_keyword)
+      (simple_identifier))
+    (initial_construct
+      (statement_or_null
+        (statement
+          (statement_item
+            (case_statement
+              (case_keyword)
+              (case_expression
+                (expression
+                  (primary
+                    (hierarchical_identifier
+                      (simple_identifier)))))
+              (case_item
+                (case_item_expression
+                  (expression
+                    (primary
+                      (function_subroutine_call
+                        (subroutine_call
+                          (tf_call
+                            (hierarchical_identifier
+                              (simple_identifier))
+                            (list_of_arguments
+                              (expression
+                                (primary
+                                  (hierarchical_identifier
+                                    (simple_identifier)))))))))))
+                (statement_or_null
+                  (statement
+                    (statement_item
+                      (blocking_assignment
+                        (operator_assignment
+                          (variable_lvalue
+                            (hierarchical_identifier
+                              (simple_identifier)))
+                          (assignment_operator)
+                          (expression
+                            (primary
+                              (primary_literal
+                                (integral_number
+                                  (decimal_number
+                                    (unsigned_number)))))))))))))))))))
