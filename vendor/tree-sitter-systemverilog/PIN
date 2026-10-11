@@ -1,0 +1,11 @@
+# Vendored base grammar for tree-sitter-verilog-ams. Do not edit grammar.js
+# here; change ../../grammar.js instead. scripts/check_vendor.sh verifies it.
+repository = https://github.com/3brahimi/tree-sitter-systemverilog
+upstream   = https://github.com/gmlarumbe/tree-sitter-systemverilog
+tag        = v0.3.1
+commit     = e88937e66adc3ee7be0bfe40b7e937eafe4212bb
+file       = grammar.js
+sha256     = 7ccb1405ca983fbb53d8c6729205df27adbb843bbe6a67258d94ea6a79f18662
+license    = MIT, Copyright (c) 2024-2025 Gonzalo M. Larumbe (see LICENSE)
+test       = https://github.com/gmlarumbe/tree-sitter-systemverilog-test
+test_commit = 682d964ba19ed707e566bb3f1493e877f1f4f042
