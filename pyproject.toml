@@ -12,11 +12,11 @@ classifiers = [
 ]
 description = "Verilog-AMS and Verilog-A grammar for tree-sitter, extending tree-sitter-systemverilog"
 keywords = [ "incremental", "parsing", "tree-sitter", "verilog-ams", "verilog-a" ]
-license.text = "MIT"
+license.text = "PolyForm-Noncommercial-1.0.0"
 name = "tree-sitter-verilog-ams"
 readme = "README.md"
 requires-python = ">=3.10"
-version = "0.1.0"
+version = "0.2.0"
 
 [project.optional-dependencies]
 core = [ "tree-sitter>=0.25" ]
