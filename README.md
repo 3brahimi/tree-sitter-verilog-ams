@@ -107,9 +107,24 @@ TREE_SITTER=/path/to/tree-sitter sh scripts/run_base_corpus.sh
 
 The committed parser was generated with tree-sitter CLI 0.27.1 (QuickJS).
 
+## Commercial use
+
+Noncommercial use is free under the PolyForm Noncommercial License 1.0.0
+(see [LICENSE](LICENSE)). Any commercial use needs a separate license from
+the author:
+
+1. Open an issue with the
+   [Commercial license request](../../issues/new?template=commercial-license.yml)
+   template, or email masoud.ebrahimi@formaltrust.ai if you prefer not to post in public.
+2. The author grants a commercial license by replying on that issue (or by
+   email), naming the licensee, the product and the terms.
+
+Versions tagged before v0.2.0 were released under the MIT License and stay
+available under it.
+
 ## License
 
-MIT, see [LICENSE](LICENSE). The vendored base grammar is MIT,
+PolyForm Noncommercial 1.0.0, see [LICENSE](LICENSE). The vendored base grammar is MIT,
 Copyright (c) 2024-2025 Gonzalo M. Larumbe; see [NOTICE](NOTICE) and
 `vendor/tree-sitter-systemverilog/LICENSE`. Test models keep their own
 licenses, listed in [test/README.md](test/README.md).
