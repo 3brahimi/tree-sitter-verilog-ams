@@ -20,7 +20,7 @@
     "description": "Verilog-AMS and Verilog-A grammar for tree-sitter, extending tree-sitter-systemverilog",
     "authors": [
       {
-        "name": "Masoud Ebrahimi"
+        "name": "3brahimi"
       }
     ]
   },

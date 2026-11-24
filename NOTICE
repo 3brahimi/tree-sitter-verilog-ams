@@ -1,5 +1,5 @@
 tree-sitter-verilog-ams
-Copyright (c) 2026 Masoud Ebrahimi
+Copyright (c) 2026 3brahimi
 Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE).
 
 This grammar extends tree-sitter-systemverilog, which is vendored unmodified
