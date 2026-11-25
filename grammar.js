@@ -1,7 +1,7 @@
 /**
  * @file Verilog-AMS and Verilog-A grammar for tree-sitter
  * @author Masoud Ebrahimi
- * @license MIT
+ * @license PolyForm-Noncommercial-1.0.0
  *
  * Extends tree-sitter-systemverilog (MIT, Copyright (c) 2024-2025 Gonzalo M.
  * Larumbe) through grammar inheritance, the same way tree-sitter-cpp extends
